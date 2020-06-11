@@ -1,3 +1,5 @@
+import fetch from 'cross-fetch'
+
 async function fetchAPI(query, { variables } = {}) {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/graphql`, {
     method: 'POST',
